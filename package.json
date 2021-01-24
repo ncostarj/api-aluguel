@@ -1,0 +1,14 @@
+{
+  "name": "aluguel",
+  "version": "1.0.0",
+  "description": "Sistema de controle de aluguel",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "api;alugel;sistema;controle"
+  ],
+  "author": "Newton Gonzaga Costa <ncosta.rj@gmail.com>",
+  "license": "MIT"
+}
