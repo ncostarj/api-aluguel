@@ -1,0 +1,12 @@
+# dependencies
+npm i express uuid mongoose reflect-metadata
+
+#dev dependencies
+npm i typescript jest supertest ts-jest ts-node-dev  @types/express @types/jest @types/supertest -D
+
+#
+yarn add express uuid mongoose reflect-metadata
+#
+yarn add typescript jest supertest ts-jest ts-node-dev  @types/express @types/jest @types/supertest -D
+#
+yarn remove express uuid mongoose reflect-metadata typescript jest supertest ts-jest ts-node-dev  @types/express @types/jest @types/supertest
