@@ -1,6 +1,6 @@
 import request from 'supertest';
-import { app } from '../app';
-import { connect, disconnect } from '../databases'
+import { app } from '../../app';
+import { connect, disconnect } from '../../databases'
 
 let proprietario = {
   "nome": "Newton Gonzaga Costa",
@@ -13,17 +13,15 @@ let proprietario = {
   "contas": [
     {
       "agencia":"0387",
-      "numero":"15427-1",
+      "numeroConta":"15427-1",
       "banco": {
         "codigo":"341",
         "nome":"Itau Unibanco S/A"
       },
-      "principal": true
+      "isPrincipal": true
     }
   ]
 };
-
-
 
 describe('Proprietario', () => {
 

@@ -151,6 +151,7 @@ export default {
   //   "**/?(*.)+(spec|test).[tj]s?(x)"
   // ],
   testMatch: [
+    "**/tests/*.(spec|test).[tj]s",
     "**/tests/unitario/*.(spec|test).[tj]s",
     "**/tests/integracao/*.(spec|test).[tj]s"
   ],  

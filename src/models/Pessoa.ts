@@ -1,15 +1,20 @@
 import { model, Schema, Model, Document } from 'mongoose';
+import { ContaSchema, IConta } from './Conta';
+import { ContatoSchema, IContato } from './Contato';
 
 interface IPessoa extends Document {
   nome: string;
   rg: string;
-  cpf: string;
+  contas: Array<IConta>;
+  contatos: Array<IContato>;
 }
 
 const PessoaSchema: Schema = new Schema({
-  nome: { type: String, required: true },
-  rg: { type: String, required: true },
-  cpf: { type: String, required: true }
+  nome: String,
+  rg: String,
+  cpf: String,
+  contas: [ContaSchema],
+  contatos: [ContatoSchema]
 }, 
 { 
   versionKey: false, 
